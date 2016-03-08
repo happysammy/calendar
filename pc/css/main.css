@@ -1,0 +1,43 @@
+.bdayTab{
+	margin-bottom: 3px;
+	margin-top:10px;
+}
+
+
+.bdayTab a {
+	display:block;
+	float:left;
+	height:26px;
+	width:61px;
+	background:url(../images/bdayTab.gif) left -30px;
+	text-align:center;
+	line-height:22px;
+	*line-height:25px !important;
+	*line-height:23px;
+	margin-right:8px;
+	color:#999;
+}
+
+.bdayTab a:hover {
+	background:url(../images/bdayTab.gif) left top;
+	padding-left:0px;
+	color:#21A121;
+	text-decoration:none;
+}
+.bdayTab a.current {
+	background:url(../images/bdayTab.gif) left top;
+	padding-left:0px;
+	color:#21A121;
+}
+
+.bdaySelectDiv {
+	margin-bottom:10px;
+}
+
+.clear {
+	height:0px;
+	width:0px;
+	padding:0px;
+	margin:0px;
+	clear:both;
+}

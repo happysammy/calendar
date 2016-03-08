@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>mobile datepicker demo</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link href="css/common.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.12.1.min.js" ></script>
+	<script type="text/javascript" src="js/date.js" ></script>
+	<script type="text/javascript" src="js/iscroll.js" ></script>
+</head>
+<body>
+<div class="ui-form-item ">
+        <label for="#" id="eventDate_title">生日</label>
+        <input placeholder="点击设置生日" type="text" id="eventDate" value="" name="eventDate">
+    </div>
+      <!-- 效果html开始-->
+ <div id="datePlugin">
+	
+<div id="dateshadow" style="display:none;"></div>
+<div id="datePage" class="page" style="display:none;">
+<section>
+<div id="datetitle">
+<input value="1" type="radio" name="datetype" checked id="solarRadio" >
+<label for="solarRadio">公历</label>
+<input value="0" type="radio" name="datetype"  id="lunarRadio">
+<label for="lunarRadio">农历</label>
+</div>
+<div id="datemark">
+	<a id="markyear"></a>
+	<a id="markmonth"></a>
+	<a id="markday"></a>
+</div>
+<div id="timemark">
+	<a id="markhour"></a>
+	<a id="markminut"></a>
+	<a id="marksecond"></a>
+</div>
+<div id="datescroll">
+	<div id="yearwrapper">
+	<ul></ul>
+	</div>
+	<div id="monthwrapper">
+	<ul></ul>
+	</div>
+	<div id="daywrapper">
+		<ul></ul>
+	</div>
+</div>
+<div id="datescroll_datetime">
+	<div id="Hourwrapper">
+	<ul></ul>
+	</div>
+	<div id="Minutewrapper">
+	<ul></ul>
+	</div>
+	<div id="Secondwrapper">
+		<ul></ul>
+	</div>
+</div>
+
+
+</section>
+
+<footer>
+	<div id="setcancle">
+	<ul>
+	<li id="dateconfirm">确定</li>
+	<li id="datecancle">取消</li>
+	</ul>
+	</div>
+</footer>
+</div>
+
+</div>
+<!--效果html结束-->
+
+<script>
+
+	 $('#eventDate').date();
+</script>
+</body>
+</html>
